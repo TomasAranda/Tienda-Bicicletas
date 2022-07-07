@@ -3,8 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="15dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal">
 
     <FrameLayout
@@ -15,31 +13,67 @@
             android:layout_height="120dp"
             android:src="@mipmap/ic_launcher"/>
 
-        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/green_700"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_gravity="top|end" />
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|end"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
-            app:srcCompat="@android:drawable/arrow_up_float"
-            />-->
+            android:layout_gravity="bottom|center"
+            android:textColor="@color/black"
+            android:text="$3000"/>
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bicicleta"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
-
-    <TextView
-        android:id="@+id/item_number"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="textEnd"
-        android:text="$3000"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bicicleta"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confort en descenso, simple amortiguacion, etc..."/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginHorizontal="5dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"/>
+            <Button
+                android:id="@+id/boton_comprar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"
+                android:textSize="10dp"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </LinearLayout>
