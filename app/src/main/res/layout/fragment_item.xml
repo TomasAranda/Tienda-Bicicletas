@@ -2,24 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="15dp"
     android:orientation="horizontal">
 
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@drawable/downhill_bike"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:backgroundTint="@color/green_700"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_gravity="top|end" />
+            android:layout_gravity="top|end"
+            app:fabCustomSize="30dp"
+            android:src="@drawable/hearth_icon"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,26 +56,25 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/downhill_type"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"
+                android:src="@drawable/rough_terrain"
                 android:layout_marginHorizontal="5dp"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/suspension"/>
             <Button
                 android:id="@+id/boton_comprar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Comprar"
                 android:textSize="10dp"
+                android:backgroundTint="@color/green_700"
                 android:layout_marginStart="20dp"/>
         </LinearLayout>
-
-
     </LinearLayout>
 
 </LinearLayout>
