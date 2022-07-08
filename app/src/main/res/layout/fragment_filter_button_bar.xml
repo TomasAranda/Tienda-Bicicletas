@@ -11,40 +11,37 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="10sp"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey_700"
         android:layout_marginHorizontal="10dp"
         android:text="DownHill"
         />
     <Button
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="10sp"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey_700"
         android:layout_marginHorizontal="10dp"
-        style="@style/ThemeOverlay.Material3.Button.TextButton"
         android:text="Trail"
         />
     <Button
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="10sp"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey_700"
         android:layout_marginHorizontal="10dp"
-        style="@style/ThemeOverlay.Material3.Button.TextButton"
         android:text="Enduro"
         />
     <Button
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="10sp"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey_700"
         android:layout_marginHorizontal="10dp"
-        style="@style/ThemeOverlay.Material3.Button.TextButton"
         android:text="Cross-Country"
         />
 
