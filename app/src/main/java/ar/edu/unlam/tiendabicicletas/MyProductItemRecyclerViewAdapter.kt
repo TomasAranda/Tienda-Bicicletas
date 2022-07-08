@@ -37,9 +37,6 @@ class MyProductItemRecyclerViewAdapter(
                 findNavController(it).navigate(R.id.action_FirstFragment_to_SecondFragment)
             }
         }
-        //override fun toString(): String {
-          //  return super.toString() + " '" + contentView.text + "'"
-        //}
     }
 
 }
