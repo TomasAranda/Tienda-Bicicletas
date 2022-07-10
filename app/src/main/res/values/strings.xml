@@ -9,4 +9,10 @@
 
     <string name="hello_first_fragment">Recomendados</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="acceso">Acceso</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="crearCta">Tiene cuenta? Creela</string>
 </resources>
