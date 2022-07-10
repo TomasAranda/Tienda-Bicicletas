@@ -15,4 +15,9 @@
     <string name="correo">Correo electrónico</string>
     <string name="password">Contraseña</string>
     <string name="crearCta">Tiene cuenta? Creela</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="name">Nombre</string>
+    <string name="fecha_nac">Fecha de nacimiento</string>
+    <string name="select_prov">Seleccione provincia</string>
+    <string name="repeat">Repita contraseña</string>
 </resources>
