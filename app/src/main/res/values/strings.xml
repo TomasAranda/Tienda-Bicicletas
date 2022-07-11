@@ -6,7 +6,13 @@
     <string name="second_fragment_label">Product Detail</string>
     <string name="next">Next</string>
     <string name="comprar">Comprar</string>
-
+    <string-array name="provinces">
+        <item>Caba</item>
+        <item>Buenos Aires</item>
+        <item>Santa Fe</item>
+        <item>Santa Cruz</item>
+        <item>Salta</item>
+    </string-array>
     <string name="hello_first_fragment">Recomendados</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->

@@ -24,6 +24,7 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        activity?.actionBar?.hide()
         binding.btnRegistrar.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_createUserFragment)
         }

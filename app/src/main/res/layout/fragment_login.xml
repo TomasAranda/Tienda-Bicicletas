@@ -45,7 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/correo"
-        android:textColorHint="@color/grey_700">
+        android:textColorHint="@color/grey_700"
+        app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -66,7 +67,8 @@
         android:textColorHint="@color/grey_700"
         android:textColor="@color/grey_700"
         app:endIconMode="password_toggle"
-        app:shapeAppearance="@style/Rounded">
+        app:shapeAppearance="@style/Rounded"
+        app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
