@@ -31,8 +31,12 @@ class CreateUserFragment : Fragment() {
         binding.viewFecha.setOnClickListener {
             picker()
         }
+        binding.inputFecha.editText?.setOnClickListener {
+            picker()
+        }
         binding.btnRegistrar.setOnClickListener{
-            findNavController().navigate(R.id.action_createUserFragment_to_FirstFragment)
+            //findNavController().navigate(R.id.action_createUserFragment_to_FirstFragment)
+            ConfirmBuyFragment(/*itemBuy*/).show(childFragmentManager, ConfirmBuyFragment.TAG)
         }
     }
 

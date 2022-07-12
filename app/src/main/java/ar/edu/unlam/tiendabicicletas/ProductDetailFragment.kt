@@ -34,7 +34,11 @@ class ProductDetailFragment : Fragment() {
 
         activity?.actionBar?.hide()
         binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_loginFragment)
+            /*if(user.isLog()){
+                ConfirmBuyFragment(/*itemBuy*/).show(childFragmentManager, ConfirmBuyFragment.TAG)
+            }else{*/
+                findNavController().navigate(R.id.action_SecondFragment_to_loginFragment)
+            //}
         }
     }
 

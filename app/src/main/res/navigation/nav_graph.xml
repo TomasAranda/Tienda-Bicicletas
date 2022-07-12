@@ -52,4 +52,9 @@
             android:id="@+id/action_createUserFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/confirmBuyFragment"
+        android:name="ar.edu.unlam.tiendabicicletas.ConfirmBuyFragment"
+        android:label="fragment_confirm_buy"
+        tools:layout="@layout/fragment_confirm_buy" />
 </navigation>
