@@ -6,25 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
-import android.widget.Toast
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.fragment.findNavController
-
-import com.google.android.material.datepicker.MaterialDatePicker
-import java.text.SimpleDateFormat
-import java.util.*
 
 class CreateUserFragment : Fragment() {
 
     private var _binding: ar.edu.unlam.tiendabicicletas.databinding.FragmentCreateUserBinding? = null
     private val binding get() = _binding!!
-    private val map = mutableMapOf<String, Int>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = ar.edu.unlam.tiendabicicletas.databinding.FragmentCreateUserBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -63,7 +55,4 @@ class CreateUserFragment : Fragment() {
         _binding = null
     }
 
-    companion object {
-
-    }
 }
