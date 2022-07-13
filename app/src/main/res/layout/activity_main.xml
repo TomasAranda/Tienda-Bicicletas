@@ -37,12 +37,14 @@
                         android:layout_height="wrap_content"
                         android:text="mountain"
                         android:textSize="18sp"
+                        android:fontFamily="@font/noize_sport"
                         android:textColor="@color/black"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="bike"
                         android:textSize="18sp"
+                        android:fontFamily="@font/noize_sport"
                         android:textColor="@color/black"/>
 
                 </LinearLayout>
