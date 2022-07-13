@@ -18,6 +18,7 @@
             android:background="@color/green_700"
             app:popupTheme="@style/Theme.TiendaBicicletas.PopupOverlay">
             <LinearLayout
+                android:id="@+id/app_title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"

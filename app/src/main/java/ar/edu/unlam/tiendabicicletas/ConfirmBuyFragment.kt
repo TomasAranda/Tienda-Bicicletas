@@ -18,6 +18,9 @@ class ConfirmBuyFragment (/*val compra: Compra*/): DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         _binding = FragmentConfirmBuyBinding.inflate(LayoutInflater.from(context))
+        binding.btnConfirm.setOnClickListener{
+            findNavController().navigate(R.id.FirstFragment)
+        }
         return AlertDialog.Builder(requireActivity())
             .setView(binding.root)
             .create()
