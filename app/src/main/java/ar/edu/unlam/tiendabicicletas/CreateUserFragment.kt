@@ -35,8 +35,8 @@ class CreateUserFragment : Fragment() {
             picker()
         }
         binding.btnRegistrar.setOnClickListener{
-            //findNavController().navigate(R.id.action_createUserFragment_to_FirstFragment)
-            ConfirmBuyFragment(/*itemBuy*/).show(childFragmentManager, ConfirmBuyFragment.TAG)
+            findNavController().navigate(R.id.action_createUserFragment_to_FirstFragment)
+            //ConfirmBuyFragment(/*itemBuy*/).show(childFragmentManager, ConfirmBuyFragment.TAG)
         }
     }
 

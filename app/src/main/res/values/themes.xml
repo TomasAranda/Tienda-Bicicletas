@@ -16,6 +16,7 @@
 
     <style name="Theme.TiendaBicicletas.NoActionBar">
         <item name="windowActionBar">false</item>
+        <item name="android:iconPreview">@drawable/user</item>
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">

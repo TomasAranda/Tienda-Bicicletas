@@ -9,6 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import androidx.navigation.fragment.findNavController
 import ar.edu.unlam.tiendabicicletas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +42,11 @@ class MainActivity : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> true
+            R.id.icon_login -> {
+                val navController = findNavController(R.id.nav_host_fragment_content_main)
+                navController.navigate(R.id.loginFragment)
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
