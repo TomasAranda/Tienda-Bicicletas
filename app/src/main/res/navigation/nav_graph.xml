@@ -34,17 +34,23 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="ar.edu.unlam.tiendabicicletas.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_createUserFragment"
             app:destination="@id/createUserFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
         android:id="@+id/createUserFragment"
         android:name="ar.edu.unlam.tiendabicicletas.CreateUserFragment"
-        android:label="fragment_create_user"
-        tools:layout="@layout/fragment_create_user" >
+        android:label="@string/crate_user_fragment_label"
+        tools:layout="@layout/fragment_create_user">
         <action
             android:id="@+id/action_createUserFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />

@@ -43,14 +43,14 @@
             android:text="Bike One"
             android:textColor="@color/black"
             android:gravity="center"
-            android:layout_marginVertical="8dp"
+            android:layout_marginBottom="14dp"
             android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="300dp"
             app:layout_constraintVertical_weight="1"
             app:layout_constraintTop_toBottomOf="@id/name"
             app:layout_constraintStart_toStartOf="@id/layout"
@@ -63,7 +63,7 @@
                 android:id="@+id/info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="15dp">
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/caracteristicas"
                     android:layout_width="match_parent"
@@ -87,14 +87,15 @@
                             android:text="Rodado"
                             android:textSize="12sp"
                             android:gravity="center"/>
-                        <ImageView
+                        <TextView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginHorizontal="10dp"
                             android:text="26"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginHorizontal="10dp"
                             android:background="@drawable/checkbox_rodado"
-                            android:backgroundTint="@color/white"
-                            android:textColor="@color/black"/>
+                            android:backgroundTint="@color/grey_200"/>
                     </LinearLayout>
                     <LinearLayout
                         app:layout_constraintTop_toTopOf="@id/caracteristicas"
@@ -113,15 +114,15 @@
                             android:text="Tamaño"
                             android:textSize="12sp"
                             android:gravity="center"/>
-                        <View
+                        <TextView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
+                            android:text="XL"
+                            android:gravity="center"
+                            android:textColor="@color/black"
                             android:layout_marginHorizontal="10dp"
-                            android:text="26"
                             android:background="@drawable/checkbox_rodado"
-                            android:backgroundTint="@color/white"
-                            android:textColor="@color/black">
-                        </View>
+                            android:backgroundTint="@color/grey_200"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_marginEnd="10dp"
@@ -144,10 +145,8 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_marginHorizontal="10dp"
-                            android:text="26"
                             android:background="@drawable/checkbox_rodado"
-                            android:backgroundTint="@color/white"
-                            android:textColor="@color/black"/>
+                            android:backgroundTint="@color/green_700"/>
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
                 <LinearLayout
@@ -158,39 +157,54 @@
                     android:gravity="center"
                     android:background="@drawable/border"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_gravity="center"
-                        android:text="Cantidad: 1"
-                        android:textSize="15sp"
-                        android:textColor="@color/black"
+                    android:layout_height="50dp">
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_redondo"
+                        android:backgroundTint="@color/black"/>
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="?attr/materialButtonOutlinedStyle"/>
-                    <com.google.android.material.button.MaterialButtonToggleGroup
-                        android:id="@+id/toggleButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="45dp">
-                        <Button
-                            android:id="@+id/btnMas"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:text="+"
-                            style="?attr/materialButtonOutlinedStyle"
-                            />
-                        <Button
-                            android:id="@+id/btnMenos"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:text="--"
-                            style="?attr/materialButtonOutlinedStyle"
-                            />
-                    </com.google.android.material.button.MaterialButtonToggleGroup>
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:text="Cantidad"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24sp"
+                            style="?attr/materialButtonOutlinedStyle"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:text="1"
+                            android:textSize="15sp"
+                            android:layout_marginHorizontal="15dp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26sp"
+                            style="?attr/materialButtonOutlinedStyle"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_redondo"
+                        android:backgroundTint="@color/black"/>
+
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
                     android:id="@+id/medio_de_pago"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="35dp"
                     android:gravity="center"
                     android:backgroundTint="@color/green_500"
                     android:layout_width="match_parent"
@@ -215,7 +229,7 @@
                             app:layout_constraintStart_toStartOf="@id/efectivo"
                             android:id="@+id/iconEfectivo"
                             android:layout_marginStart="10dp"
-                            android:background="@drawable/ic_launcher_background"
+                            android:background="@drawable/efectivo"
                             android:layout_width="40dp"
                             android:layout_height="40dp"/>
                         <TextView
@@ -245,7 +259,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/border"
+                        android:background="@color/black"
                         android:backgroundTint="@color/black"
                         android:layout_marginVertical="2dp"
                         android:layout_marginHorizontal="45dp"/>
@@ -260,7 +274,7 @@
                             app:layout_constraintStart_toStartOf="@id/transferencia"
                             android:id="@+id/iconTransferencia"
                             android:layout_marginStart="10dp"
-                            android:background="@drawable/ic_launcher_background"
+                            android:background="@drawable/banco"
                             android:layout_width="40dp"
                             android:layout_height="40dp"/>
                         <TextView
@@ -290,7 +304,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/border"
+                        android:background="@color/black"
                         android:backgroundTint="@color/black"
                         android:layout_marginVertical="2dp"
                         android:layout_marginHorizontal="45dp"/>
@@ -305,7 +319,7 @@
                             app:layout_constraintStart_toStartOf="@id/tarjeta"
                             android:id="@+id/iconTarjeta"
                             android:layout_marginStart="10dp"
-                            android:background="@drawable/ic_launcher_background"
+                            android:background="@drawable/tarjeta"
                             android:layout_width="40dp"
                             android:layout_height="40dp"/>
                         <TextView

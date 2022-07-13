@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import androidx.navigation.fragment.findNavController
 import ar.edu.unlam.tiendabicicletas.databinding.FragmentConfirmBuyBinding
 
 class ConfirmBuyFragment (/*val compra: Compra*/): DialogFragment() {
@@ -17,13 +18,9 @@ class ConfirmBuyFragment (/*val compra: Compra*/): DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         _binding = FragmentConfirmBuyBinding.inflate(LayoutInflater.from(context))
-        setValues()
         return AlertDialog.Builder(requireActivity())
             .setView(binding.root)
             .create()
-    }
-
-    private fun setValues() {
     }
 
     override fun onDestroyView() {

@@ -4,6 +4,8 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Mountain Bike</string>
     <string name="second_fragment_label">Product Detail</string>
+    <string name="login_fragment_label">Acceso</string>
+    <string name="crate_user_fragment_label">Registrar Cuenta</string>
     <string name="next">Next</string>
     <string name="comprar">Comprar</string>
     <string-array name="provinces">
