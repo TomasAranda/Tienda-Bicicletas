@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 
 class CreateUserFragment : Fragment() {
@@ -24,7 +25,6 @@ class CreateUserFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setProvinces()
-        activity?.actionBar?.hide()
         binding.inputFecha.setOnClickListener {
             picker()
         }
@@ -59,4 +59,18 @@ class CreateUserFragment : Fragment() {
         _binding = null
     }
 
+    override fun onStart() {
+        super.onStart()
+        (activity as AppCompatActivity).supportActionBar!!.hide()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        (activity as AppCompatActivity).supportActionBar!!.show()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as AppCompatActivity).supportActionBar!!.hide()
+    }
 }
